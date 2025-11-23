@@ -25,6 +25,28 @@
         "clover honey"
       ],
       "image" : "peach-mango.svg"
+    },
+    {
+      "name": "Strawberry Sprinkle Surprise",
+      "calories": 300,
+      "type": "ice cream",
+      "ingredients": [
+        "strawberry purée",
+        "crispy sprinkles",
+        "sweet cream base"
+      ],
+      "image": "strawberry-sprinkle.svg"
+    },
+    {
+      "name": "Alien Apple Blast",
+      "calories": 420,
+      "type": "gelato",
+      "ingredients": [
+        "green apple syrup",
+        "cotton candy dust",
+        "liquid sugar orb"
+      ],
+      "image": "ice-cream-xtra1.svg"
     }
   ]
 }
