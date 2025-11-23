@@ -59,7 +59,12 @@ function showTopFlavors(jsonObj) {
         else{
            caloriesP.style.color = 'green' 
         }
-              
+        
+        //display the type of the ice cream as a badge
+        let typeP = document.createElement('p');
+        typeP.textContent = `Type: ${topFlavors[i].type}`;
+        typeP.style.fontWeight = "bold";
+        
         
         
        
@@ -67,7 +72,7 @@ function showTopFlavors(jsonObj) {
         article.appendChild(img);
         article.appendChild(ul);
         article.appendChild(caloriesP);
-
+        article.appendChild(typeP)
         section.appendChild(article);
     }
 }
