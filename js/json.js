@@ -47,10 +47,26 @@ function showTopFlavors(jsonObj) {
             li.textContent = ingredients[j];
             ul.appendChild(li);
         }
-
+          //display the calories of the ice cream
+        let caloriesP = document.createElement('p');
+        caloriesP.textContent = `Calories: ${topFlavors[i].calories}`;
+         
+        //condition to change the color of the calories
+        if(topFlavors[i].calories > 400)
+        {
+            caloriesP.style.color = 'red'
+        }
+        else{
+           caloriesP.style.color = 'green' 
+        }
+              
+        
+        
+       
         article.appendChild(h2);
         article.appendChild(img);
         article.appendChild(ul);
+        article.appendChild(caloriesP);
 
         section.appendChild(article);
     }
